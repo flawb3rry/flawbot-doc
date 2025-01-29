@@ -1,0 +1,42 @@
+site_name: Flawbot Commands
+site_url: https://docs.flawb3rry.com
+theme:
+  name: material
+  font:
+    code: Red Hat Mono
+  icon:
+    logo: fontawesome/solid/robot
+  features:
+    - navigation.footer
+  palette:
+    scheme: slate
+    primary: blue
+    accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+extra:
+  generator: false
+  social:
+    - icon: simple/twitch
+      link: "https://twitch.tv/flawb3rry"
+    - icon: simple/x
+      link: "https://x.com/flawb3rry"
